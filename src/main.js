@@ -17,7 +17,7 @@ if (!test_result) {
 	process.exit();
 }
 
-const filepath = `${__dirname}/${test_result}`;
+const filepath = `${process.cwd()}/${test_result}`;
 
 honestcode
 	.sendTestResults(blueprint_hook, filepath)
