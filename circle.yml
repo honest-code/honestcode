@@ -11,7 +11,7 @@ test:
   override:
     - npm run coverage
     - npm run coveralls
-    - node ./src/hc-client $HC_HOOK_CODE ../acceptance_test_results.json
+    - node ./src/honestcode $HC_HOOK_CODE ../acceptance_test_results.json
 deployment:
   npm:
     branch: master
