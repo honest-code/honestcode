@@ -1,0 +1,22 @@
+machine:
+  node:
+    version: 6.3.0
+checkout:
+  post:
+    - npm install
+dependencies:
+  cache_directories:
+    - ./node_modules
+test:
+  override:
+    - npm run coverage
+    - npm run coveralls
+    - node ./src/hc-client $HC_HOOK_CODE ../acceptance_test_results.json
+deployment:
+  npm:
+    branch: master
+    commands:
+      - echo -e "$NPM_USERNAME\n$NPM_PASSWORD\n$NPM_EMAIL" | npm login
+      - npm version 1.0.$CIRCLE_BUILD_NUM --no-git-tag-version
+      - npm publish --access public
+
