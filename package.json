@@ -11,6 +11,9 @@
     "coveralls": "istanbul-coveralls",
     "codeclimate": "codeclimate-test-reporter < ./coverage/lcov.info"
   },
+  "bin": {
+    "honestcode": "./main.js"
+  },
   "engines": {
     "node": ">=6.0"
   },

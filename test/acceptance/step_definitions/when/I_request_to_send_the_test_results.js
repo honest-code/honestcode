@@ -1,6 +1,6 @@
 'use strict';
 
-const honestcode = require('../../../../src/hc');
+const honestcode = require('../../../../src/honestcode');
 
 module.exports = function (){
 	this.When(/^I request to send the test results$/, () => {
