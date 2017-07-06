@@ -2,6 +2,7 @@
 logs
 *.log
 npm-debug.log*
+acceptance_test_results.json
 
 # Runtime data
 pids

@@ -7,6 +7,20 @@ Feature: Send cucumber test results to blueprint hook url
 
   Scenario: POST /api/hook/tr/ with no errors
     Given I already have the file "test_results.json" with result "{}"
-    And I already have the blueprint hook code "HOOK_VALID_CODE"
+    And I already have the blueprint hook code "HOOK_VALID_24_CHARS_CODE"
+    When I request to send the test results
+    Then I don't receive any error
+
+
+  Scenario: POST /api/hook/tr/ with hook code errors
+    Given I already have the file "test_results.json" with result "{}"
+    And I already have the blueprint hook code "HOOK_INVALID_CODE"
+    When I request to send the test results
+    Then I receive an error
+
+
+  Scenario: POST /api/hook/tr/ with a full hook code URL
+    Given I already have the file "test_results.json" with result "{}"
+    And I already have the blueprint hook code "https://pro.honestcode.io/api/hooks/tr/rJlIL8X94rkW8UUQ5EByMIUL"
     When I request to send the test results
     Then I don't receive any error

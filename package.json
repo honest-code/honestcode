@@ -1,7 +1,7 @@
 {
   "name": "honestcode",
-  "version": "1.0.0",
-  "description": "The HonestCode client is a tool which helps DevOps to integrate different systems with honestcode.io",
+  "version": "1.0.11",
+  "description": "The HonestCode client is a tool which helps DevOps to integrate multiple CI/CD systems with honestcode.io",
   "scripts": {
     "test": "npm run test-acceptance",
     "test-acceptance": "cucumber-js ./test/acceptance/features -r ./test/acceptance/step_definitions --tags ~@ignore --format json:acceptance_test_results.json",
@@ -18,14 +18,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/honest-code/hc-client.git"
+    "url": "git+https://github.com/honest-code/honestcode.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/honest-code/hc-client/issues"
+    "url": "https://github.com/honest-code/honestcode/issues"
   },
-  "homepage": "https://github.com/honest-code/hc-client#readme",
+  "homepage": "https://github.com/honest-code/honestcode#readme",
   "devDependencies": {
     "codeclimate-test-reporter": "^0.3.3",
     "coveralls": "^2.11.12",
