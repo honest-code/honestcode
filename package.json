@@ -1,6 +1,6 @@
 {
   "name": "honestcode",
-  "version": "1.0.11",
+  "version": "1.0.0",
   "description": "The HonestCode client is a tool which helps DevOps to integrate multiple CI/CD systems with honestcode.io",
   "scripts": {
     "test": "npm run test-acceptance",
