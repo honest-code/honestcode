@@ -19,6 +19,9 @@ npm install
 # Tests
 npm run test-acceptance
 
+# NPM publishing
+npm login
+npm publish
 
 # Usage
 
