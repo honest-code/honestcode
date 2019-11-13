@@ -9,7 +9,7 @@
     "coverage": "npm run coverage-acceptance",
     "coveralls": "istanbul-coveralls",
     "codeclimate": "codeclimate-test-reporter < ./coverage/lcov.info",
-    "results2HC" : "curl -XPOST --data-binary @./acceptance_test_results.json https://pro.honestcode.io/api/hooks/tr/rJlIL8X94rkW8UUQ5EByMIUL -v -s"
+    "results2HC": "curl -XPOST --data-binary @./acceptance_test_results.json https://pro.honestcode.io/api/hooks/tr/blueprint/bp.BJL88X54W/environment/rJlIL8X94rkW8UUQ5EByMIUL -v -s"
   },
   "bin": {
     "honestcode": "./src/main.js"

@@ -22,9 +22,9 @@ npm run test-acceptance
 
 # Usage
 
-You can find the  _{HOOK_CODE}_ in the projects' blueprint page at [pro.HonestCode.io](https://pro.honestcode.io/#/blueprint/)
+You can find the  _{WEB_HOOK}_ in the projects' blueprint page at [pro.HonestCode.io](https://pro.honestcode.io)
 
 ```sh
-honestcode {HOOK_CODE} {TEST_RESULTS_FILENAME}
+honestcode {WEB_HOOK} {TEST_RESULTS_FILENAME}
 ```
 
