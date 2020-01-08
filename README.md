@@ -25,7 +25,7 @@ npm publish
 
 # Usage
 
-You can find the  _{WEB_HOOK}_ in the projects' blueprint page at [pro.HonestCode.io](https://pro.honestcode.io)
+You can find the _{WEB_HOOK}_ value in the projects' blueprint page at [pro.HonestCode.io](https://pro.honestcode.io)
 
 ```sh
 honestcode {WEB_HOOK} {TEST_RESULTS_FILENAME}
