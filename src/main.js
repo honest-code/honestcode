@@ -15,7 +15,7 @@ if (!blueprint_hook) {
 let blueprintHookCodeLen = blueprint_hook.length;
 if (blueprintHookCodeLen!==24 && blueprintHookCodeLen!==36) {
 	if (blueprint_hook.indexOf('https://') === -1 || blueprint_hook.indexOf('.honestcode.io/api/hooks/tr/') === -1) {
-        console.error(`You have to use as first parameter just a valid blueprint hook code (a 24 chars string) instead of "${blueprint_hook}"`);
+        console.error(`Main: you have to use as first parameter just a valid blueprint hook code (a 24 chars string) instead of "${blueprint_hook}"`);
         process.exit();
     }
 }

@@ -19,7 +19,7 @@ npm install
 # Tests
 npm run test-acceptance
 
-# NPM publishing
+# NPM tool publishing (npm administrators)
 npm login
 npm publish
 
